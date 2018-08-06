@@ -1,6 +1,6 @@
 {
   "name": "web-camera",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "keywords": [],
   "main": "dist/web-camera.umd.js",
@@ -12,7 +12,7 @@
   "author": "Mohammad Kermani <98kermani@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/m98/demo.git"
+    "url": "https://github.com/m98/web-camera.git"
   },
   "license": "MIT",
   "engines": {
@@ -31,7 +31,8 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -98,7 +99,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.11.1",
-    "semantic-release": "^15.0.0",
+    "semantic-release": "^15.9.5",
     "ts-jest": "^22.0.0",
     "ts-node": "^6.0.0",
     "tslint": "^5.8.0",
@@ -106,6 +107,7 @@
     "tslint-config-standard": "^7.0.0",
     "typedoc": "^0.11.0",
     "typescript": "^2.6.2",
-    "validate-commit-msg": "^2.12.2"
+    "validate-commit-msg": "^2.12.2",
+    "travis-deploy-once": "^5.0.2"
   }
 }
